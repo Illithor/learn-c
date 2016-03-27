@@ -1,0 +1,161 @@
+【1】
+#include<stdio.h>
+#include<windows.h>
+int main(void)
+
+{
+printf("AAABBB\n");
+printf("AAA\BBB\n");
+printf("AAA");
+printf(" BBB");
+system("pause");
+return 0;
+}
+
+
+
+【2】
+
+
+
+【3】
+#include<stdio.h>
+#include<windows.h>
+int main(void)
+
+{
+int year,day;
+year = 18;
+day = 365 * year;
+printf("Years=%d, days=%d.",year,day);
+
+system("pause");
+return 0;
+}
+
+
+【4】
+#include<stdio.h>
+#include<windows.h>
+void jolly(void)【;】
+void deny(void)【;】
+
+int main(void)
+{
+jolly();
+jolly();
+jolly();
+deny();
+system("pause");
+return 0;
+}
+
+void jolly(void)
+{
+printf(【"】For he's a jolly good fellow!\n【"】);
+}
+
+void deny(void)
+{
+printf(【"】Which nobody can deny!\n【"】);
+}
+
+
+【5】
+#include<stdio.h>
+#include<windows.h>
+void br(void);
+void ic(void);
+
+int main(void)
+{
+br();
+printf(", ");
+ic();
+printf("\n");
+ic();
+printf(",\n");
+br();
+printf("\n");
+system("pause");
+return 0;
+}
+
+void br(void)
+{
+printf("Brazil, Russia");
+}
+
+void ic(void)
+{
+printf("India, China");
+}
+
+
+【6】
+#include<stdio.h>
+#include<windows.h>
+
+int main(void)
+{
+int toes, tw_toes, sq_toes;
+toes = 10;
+tw_toes = 2 * toes;
+sq_toes = toes * toes;
+printf("toes=%d, twice toes=%d, squared toes=%d.\n", toes, tw_toes, sq_toes);
+system("pause");
+return 0;
+}
+
+
+
+【7】
+#include<stdio.h>
+#include<windows.h>
+void smile(void);
+
+int main(void)
+{
+smile();smile();smile();
+printf("\n");
+smile();smile();
+printf("\n");
+smile();
+printf("\n");
+system("pause");
+return 0;
+}
+
+void smile(void)
+{
+printf("Smile!");
+}
+
+
+【8】
+#include<stdio.h>
+#include<windows.h>
+void one_three(void);
+void two(void);
+
+int main(void)
+{
+printf("starting now:\n");
+one_three();
+printf("done!\n");
+system("pause");
+return 0;
+}
+
+void one_three(void)
+{
+printf("one\n");
+two();
+printf("three\n");
+
+}
+
+void two(void)
+{
+printf("two\n");
+}
