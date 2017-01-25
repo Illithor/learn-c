@@ -45,3 +45,21 @@
   }
  ```
  
+## Week 2
+1. What does it print?
+```c
+int main(void) {
+  int x = 0;
+  int y = 2;
+  printf("%d", printf("%d", y));
+  if ((x = y - 1)) {
+    printf("%d", x = x + 2);
+  }
+  if (x) {
+    y *= y;
+    printf("%d", y);
+  }
+  printf("\n");
+}
+```
+ => 2134
