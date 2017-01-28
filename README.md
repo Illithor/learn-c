@@ -46,7 +46,23 @@
  ```
  
 ## Week 2
-1. What does it print?
+1. A better way to achieve a cond:
+```c
+int main(int x) {
+  if (x > 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
+```
+The code above can be writen as following:
+```c
+int main(int x) {
+  return (x > 0);
+}
+```
+2. What does it print?
 ```c
 int main(void) {
   int x = 0;
