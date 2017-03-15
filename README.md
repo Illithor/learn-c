@@ -79,3 +79,20 @@ int main(void) {
 }
 ```
  => 2134
+
+
+## Week 8
+ 1. Don't forget the null terminator!
+```c
+char *repeat(const char *s) {
+  int len = strlen(s);
+  char *re = malloc((2 * len + 1) * sizeof(char));
+  
+  for (int i = 0; i < len; ++i) {
+    re[i] = s[i];
+    re[i + len] = s[i];
+  }
+  re[len * 2] = '\0'; // never forget this line!!!
+  return re;
+}
+```
