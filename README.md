@@ -82,8 +82,9 @@ int main(void) {
 
 
 ## Week 8
- 1. Don't forget the null terminator!
-```c
+ 1. Don't forget the null terminator!    
+  (But this is for strings only. If we are asked to return a array, we don't need to put a null terminator at th end.)
+ ```c
 char *repeat(const char *s) {
   int len = strlen(s);
   char *re = malloc((2 * len + 1) * sizeof(char));
@@ -95,4 +96,8 @@ char *repeat(const char *s) {
   re[len * 2] = '\0'; // never forget this line!!!
   return re;
 }
-```
+ ```
+ 2. Don't forget to multiply the size!
+ ```c
+ *re =  realloc(re, new_length * sizeof(int)); // time the size!!!
+ ```
