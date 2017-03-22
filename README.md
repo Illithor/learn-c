@@ -101,3 +101,4 @@ char *repeat(const char *s) {
  ```c
  *re =  realloc(re, new_length * sizeof(int)); // time the size!!!
  ```
+ 3. After inserting element to or removing element from ADT, don't forget to modify the value of `len` in the struct!
