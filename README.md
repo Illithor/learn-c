@@ -102,3 +102,20 @@ char *repeat(const char *s) {
  *re =  realloc(re, new_length * sizeof(int)); // time the size!!!
  ```
  3. After inserting element to or removing element from ADT, don't forget to modify the value of `len` in the struct!
+
+## Week 9
+ 1. Insert an int into a sorted array:
+  ```c
+  // s is a set with fields len and arr
+  // len is the length of s->arr
+  // s->arr is a sorted int array
+  // i is the int we want to insert into s->arr
+  int k = s->len;
+  while (k && s->arr[k-1] > i) {
+    s->arr[k] = s->arr[k-1];
+    --k;
+  }
+  s->arr[k] = i;
+  ++s->len;
+  ```
+ 2. If you want to remove a element from a linked list, always set a pointer (backup) to the element to be removed. After set the prevnode's next to curnode's next, free the backup! Otherwise curnode will get "stucked" into the memory and eventually causes memory leak.
